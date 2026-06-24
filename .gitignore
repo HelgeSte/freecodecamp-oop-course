@@ -1,0 +1,13 @@
+# Visual Studio Code local settings and history
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/code-workspace
+
+# Local history extension log
+.history/
+
+# Built-in crash diagnostics
+*.code-workspace
