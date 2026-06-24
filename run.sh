@@ -1,3 +1,4 @@
 #!/bin/bash
-g++ CodeBeauty_OOP.cpp
-a.out
+rm codebeauty
+g++ CodeBeauty_OOP.cpp -o codebeauty
+codebeauty

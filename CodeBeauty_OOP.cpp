@@ -2,10 +2,33 @@
 using std::string;
 
 class Employee {
-    public:
+    private:
         string Name;
         string Company;
         int Age;
+    public:
+    // setters and getters
+        void setName(string name){
+            Name = name;
+        }
+        string getName(){
+            return Name;
+        }
+
+        void setCompany(string company){
+            Company = company;
+        }
+        string getCompany(){
+            return Company;
+        }
+
+        void setAge(int age){
+            if(age >= 18)
+                Age = age;
+        }
+        int getAge(){
+            return Age;
+        }
 
         void IntroduceYourself(){
             std::cout << "Name - " << Name << std::endl;
@@ -22,18 +45,14 @@ class Employee {
 
 int main()
 {
-    Employee employee1 = Employee("Saldina", "YT-CodeBeauty", 25);;
-    /*employee1.Name = "Saldina";
-    employee1.Company = "YT-CodeBeauty";
-    employee1.Age = 25;*/
+    Employee employee1 = Employee("Saldina", "YT-CodeBeauty", 25);
     employee1.IntroduceYourself();
 
     Employee employee2 = Employee("John", "Amazon", 35);
-    /*employee1.Name = "John";
-    employee1.Company = "Amazon";
-    employee1.Age = 35;*/
     employee2.IntroduceYourself();
-       
 
+    employee1.setAge(17);
+    std::cout << employee1.getName() << " is " << employee1.getAge() << " years old" << std::endl;
+       
     return 0;
 }
