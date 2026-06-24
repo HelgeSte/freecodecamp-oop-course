@@ -7,26 +7,28 @@ class Employee {
         string Company;
         int Age;
 
-        /*void IntroduceYourself(){
+        void IntroduceYourself(){
             std::cout << "Name - " << Name << std::endl;
             std::cout << "Company - " << Company << std::endl;
-            std::
-        */ 
+            std::cout << "Age - " << Age << std::endl;
+		}
     
-    Employee(string name, string company, int age) {
-        
-    }
+		Employee(string name, string company, int age) {
+			Name = name;
+			Company = company;
+			Age = age;
+		}
 };
 
 int main()
 {
-    Employee employee1;
+    Employee employee1 = Employee("Saldina", "YT-CodeBeauty", 25);;
     /*employee1.Name = "Saldina";
     employee1.Company = "YT-CodeBeauty";
     employee1.Age = 25;*/
     employee1.IntroduceYourself();
 
-    Employee employee2;
+    Employee employee2 = Employee("John", "Amazon", 35);
     /*employee1.Name = "John";
     employee1.Company = "Amazon";
     employee1.Age = 35;*/
